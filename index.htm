@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript版赛车游戏源码_51CTO下载中心_IT技术资料免费下载</title>
+<meta name="description" content="JavaScript版赛车游戏源码.rar51CTO下载中心致力于为全球IT专业人士提供完全免费、安全可靠、下载速度最快的技术资料下载服务。" />
+<meta name="keywords" content="JavaScript,赛车,游戏,源码,JavaScript游戏" />
+<link href="http://down.51cto.com/css/Down_Head.css" rel="stylesheet" type="text/css" />
+<link href="http://down.51cto.com/css/master_zy.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="http://down.51cto.com/css/header_master_top.css">
+<script src="http://down.51cto.com/js/message.js" type="text/javascript"></script>
+<script src="http://images.51cto.com/images/homepage/index_1_down.js"></script>
+</head>
+
+<body>
+<div id="append_parent"></div>
+
+<div id="home_top">    <div class="top_nav">        <div class="left"><a target="_blank" href="http://www.51cto.com">51CTO首页</a><img height="25" align="absmiddle" width="16" style="padding-top: 2px;" src="http://home.51cto.com/public/themes/blue/images/top_bg_xian.gif"><a target="_blank" href="http://www.51cto.com/col/35/" onmouseout="popupClose();" onmouseover="show(1,this);">技术频道<img align="absmiddle" style="padding-left: 4px;" src="http://images.51cto.com/images/art/top_images/nav_ico1.gif"></a><img height="25" align="absmiddle" width="16" src="http://home.51cto.com/public/themes/blue/images/top_bg_xian.gif"><a target="_blank" href="http://www.51cto.com" onmouseout="popupClose();" onmouseover="show(2,this);">51CTO旗下网站<img align="absmiddle" style="padding-left: 4px;" src="http://images.51cto.com/images/art/top_images/nav_ico1.gif"></a><img height="25" align="absmiddle" width="16" src="http://home.51cto.com/public/themes/blue/images/top_bg_xian.gif"><a target="_blank" href="http://www.51cto.com/about/map.htm">地图</a>        </div>        <div class="right">            <div class="more"><img height="16" align="absmiddle" width="27" src="http://home.51cto.com/public/themes/blue/images/top_shequ.gif">社区：<a target="_blank" href="http://bbs.51cto.com">论坛</a><a target="_blank" href="http://blog.51cto.com">博客</a><a target="_blank" href="http://down.51cto.com">下载</a><a target="_blank" href="http://book.51cto.com/">读书</a><a href="javascript:viod(0);" onmouseout="popupClose()" onmouseover="show(3,this)">更多<img align="absmiddle" style="padding-left: 4px;" src="http://images.51cto.com/images/art/top_images/nav_ico1.gif"></a>            </div>            <span id="login_status"><div class="login" id="login_status"></div>    </span>                </div>    </div></div>
+<div class="subMenu1" id="s1" onmouseover="popupNoClose();" onmouseout="popupClose();">
+<ul>
+<li><a href="http://network.51cto.com" target="_blank">组网</a></li>
+<li><a href="http://netsecurity.51cto.com" target="_blank">安全</a></li>
+<li><a href="http://developer.51cto.com" target="_blank">开发</a></li>
+<li><a href="http://database.51cto.com" target="_blank">数据库</a></li>
+<li><a href="http://server.51cto.com" target="_blank">服务器</a></li>
+<li><a href="http://os.51cto.com" target="_blank">系统</a></li>
+<li><a href="http://virtual.51cto.com" target="_blank">虚拟化</a></li>
+<li><a href="http://cloud.51cto.com" target="_blank">云计算</a></li>
+<li><a href="http://developer.51cto.com/embed/" target="_blank">嵌入式</a></li>
+</ul>
+</div>
+
+<div class="subMenu2" id="s2" onmouseover="popupNoClose()" onmouseout="popupClose()">
+<ul>
+<li><a href="http://www.51cto.com" target="_blank" title="中国领先的IT技术网站">51CTO.COM</a></li>
+<li><a href="http://www.cioage.com" target="_blank" title="中国首个专门服务于CIO的专业网站">CIOage.com</a></li>
+<li><a href="http://www.watchstor.com/" target="_blank"  title="领先的中文存储网络媒体">WatchStor.com</a></li>
+<li><a href="http://www.hc3i.cn/" target="_blank"  title="中国首家专注于数字医疗及医疗信息化的专业网站">HC3i.cn</a></li>
+</ul>
+</div>
+
+<div class="subMenu3" id="s3" onmouseover="popupNoClose()" onmouseout="popupClose()">
+<ul>
+<li><a href="http://home.51cto.com" target="_blank">家园</a></li>
+<li><a href="http://blog.51cto.com" target="_blank">博客</a></li>
+<li><a href="http://bbs.51cto.com" target="_blank">论坛</a></li>
+<li><a href="http://down.51cto.com" target="_blank">下载</a></li>
+<li><a href="http://selftest.51cto.com" target="_blank">自测</a></li>
+<li><a href="http://doctor.51cto.com" target="_blank">门诊</a></li>
+<li><a href="http://blog.51cto.com/newsletter/" target="_blank">周刊</a></li>
+<li><a href="http://book.51cto.com" target="_blank">读书</a></li>
+<li><a href="http://g.51cto.com" target="_blank">技术圈</a></li>
+<li><a href="http://zhidao.51cto.com" target="_blank">知道</a></li>
+</ul>
+</div>
+
+<div id="head">
+<div class="subNav">
+<div class="logo"><a href="http://down.51cto.com"><img src="http://down.51cto.com/images/Down_logo.gif" border="0" /></a><h1>51CTO下载中心</h1></div>
+<div class="daohang"><a href="http://down.51cto.com/top" target="_blank">热门下载</a><a href="http://down.51cto.com/detail_list.php?c_it=&c_re=2&c_co=&c_in=&uid=&keywords=&sortby=t&typeby=&z_p=&t_j=" target="_blank">技术文档</a>
+<a href="http://down.51cto.com/detail_list.php?c_it=&c_re=3&c_co=&c_in=&uid=&keywords=&sortby=t&typeby=&z_p=&t_j=" target="_blank">解决方案</a><a href="http://down.51cto.com/detail_list.php?c_it=&c_re=4&c_co=&c_in=&uid=&keywords=&sortby=t&typeby=&z_p=&t_j=" target="_blank">源码</a><a href="http://down.51cto.com/detail_list.php?c_it=&c_re=6&c_co=&c_in=&uid=&keywords=&sortby=t&typeby=&z_p=&t_j=" target="_blank">电子书</a><a href="http://down.51cto.com/detail_list.php?c_it=&c_re=7&c_co=&c_in=&uid=&keywords=&sortby=t&typeby=&z_p=&t_j=" target="_blank">白皮书</a><a href="http://down.51cto.com/detail_list.php?c_it=&c_re=8&c_co=&c_in=&uid=&keywords=&sortby=t&typeby=&z_p=&t_j=" target="_blank">软件</a></div>
+</div>
+<div class="nav"><a href="http://down.51cto.com" >首 页</a><a href="http://down.51cto.com/detail" >下载搜索</a><a href="http://down.51cto.com/commend" >推荐下载</a><a href="http://down.51cto.com/top" >下载排行</a><a href="http://down.51cto.com/tag" >标签搜索</a><a href="http://down.51cto.com/zt" >下载专题</a>
+<span class="upload"><img src="http://down.51cto.com/images/upload_1.gif" onmouseover="this.src='http://down.51cto.com/images/upload_2.gif'" onmouseout="this.src='http://down.51cto.com/images/upload_1.gif'" onclick="javascript:if(!3268796){alert('请先登录');document.location.href='http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fupload';return false;}else{document.location.href='http://down.51cto.com/upload'}"/></span>
+</div>
+<div class="tag"><dl>
+<dt><a href="http://down.51cto.com">下载中心首页</a> > <a href='/detail'>下载资源列表</a> > JavaScript版赛车游戏源码</dt>
+<dd>
+
+bolson
+<span id="creditsspan">
+
+<a href="javascript:void(0)"  style="color:#FF0000" onclick="getFreeCredits('3268796');"  title="每天1次领取机会，每次2颗下载豆，不可累加。"><u>领取下载豆</u></a>
+
+</span> | <a href="http://down.51cto.com/3268796"><u>我的下载</u></a> <!--| <a href="javascript:void(0)" onclick="pmwin('open')"><u>短消息</u></a>--> | <a href="http://51ctodown.blog.51cto.com/all/948211/2"><u>帮助</u></a> 
+
+</dd>
+</dl></div>
+</div>
+<div id="dw_loginform" align="center" style="display:none;">
+<div class="albumalert">
+<div class="alerttitle"><span style="float:left;width:80%;color:#000;font-weight:700" id="dw_loginform_title">登录</span><span style="float:right;width:5%;"><a href="" onclick="document.getElementById('dw_loginform').style.display='none';return false;"><img src="http://img1.51cto.com/images/pic/alertcolse.gif" border="0"></a></span></div>
+<div class="alertcentent">
+<a href="http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087">登录</a>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+    var favor_url = "http://down.51cto.com/data/182087";
+    var favor_title = "JavaScript版赛车游戏源码";
+    var favor_fuid = "2129530";
+</script>
+<script type="text/javascript" src="http://home.51cto.com/apps/favorite/Tpl/default/Public/js/favorbox.js"></script>
+<div id="container">
+<div id="left">
+<div class="fenx" id="shareDiv">
+<ul>
+<li class="li1">分享到：</li>
+<li class="" id="msnQLi"><a href="javascript:void(0);" onclick="clickMsnq('JavaScript版赛车游戏源码','http://down.51cto.com','182087');">MSN/QQ</a></li>
+<li class="" id="bbsLi"><a href="javascript:void(0);" onclick="clickBbs('JavaScript版赛车游戏源码','http://down.51cto.com','182087');">论坛</a></li>
+<li><a href="http://www.kaixin001.com/repaste/share.php?rurl=http://down.51cto.com/data/182087&rcontent=JavaScript%E7%89%88%E8%B5%9B%E8%BD%A6%E6%B8%B8%E6%88%8F%E6%BA%90%E7%A0%81.rar&rtitle=%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E5%A5%BD%E8%B5%84%E6%BA%90%EF%BC%9AJavaScript%E7%89%88%E8%B5%9B%E8%BD%A6%E6%B8%B8%E6%88%8F%E6%BA%90%E7%A0%81" target="_blank" onclick="shareTotal('kaixin');">开心</a></li>
+<li><a href="http://share.renren.com/share/buttonshare.do?link=http://down.51cto.com/data/182087&title=%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E5%A5%BD%E8%B5%84%E6%BA%90%EF%BC%9AJavaScript%E7%89%88%E8%B5%9B%E8%BD%A6%E6%B8%B8%E6%88%8F%E6%BA%90%E7%A0%81" target="_blank"  onclick="shareTotal('renren');">人人</a></li>
+<li><a href="http://www.douban.com/recommend/?url=http://down.51cto.com/data/182087&title=%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E5%A5%BD%E8%B5%84%E6%BA%90%EF%BC%9AJavaScript%E7%89%88%E8%B5%9B%E8%BD%A6%E6%B8%B8%E6%88%8F%E6%BA%90%E7%A0%81" target="_blank"  onclick="shareTotal('douban');">豆瓣</a></li>
+<li><a href="http://v.t.sina.com.cn/share/share.php?appkey=579809138&url=http://down.51cto.com/data/182087&title=%E6%8E%A8%E8%8D%90%E4%B8%80%E4%B8%AA%E5%A5%BD%E8%B5%84%E6%BA%90%EF%BC%9AJavaScript%E7%89%88%E8%B5%9B%E8%BD%A6%E6%B8%B8%E6%88%8F%E6%BA%90%E7%A0%81&pic=http://down.51cto.com/images/Down_logo.gif" target="_blank"  onclick="shareTotal('sina');">新浪微博</a></li><li style="float:right;"><a href="javascript:favorBox('open');" title="一键收藏，随时查看，分享好友！" style=" padding:4px 10px 9px 25px;"><img src="http://home.51cto.com/public/themes/blue/images/favorite_add_small.gif" border="0" alt="一键收藏，随时查看，分享好友！" /></a></li></ul>
+<table width="500" border="0" cellspacing="0" cellpadding="0" id="shareUrlTable" style="display:none;">
+  <tr>
+    <td height="10" colspan="4"></td>
+    </tr>
+  <tr>
+    <td width="14">&nbsp;</td>
+    <td width="162" id="shareTextTD1" class="li3">分享本资源给<span id="shareTextFont">MSN/QQ</span>上的好友<span style="display:none" id="ubbCode">(UBB代码)</span></td>
+    <td width="186"><input type="text" name="shareText" id="shareText" class="texturl"   onclick="copyShareUrl($('shareText').value, 'JavaScript版赛车游戏源码');" /></td>
+    <td width="138" id="shareTextTD2"><img src="http://down.51cto.com/images/copy1.gif" width="51" height="23" onclick="copyShareUrl($('shareText').value, 'JavaScript版赛车游戏源码');" style="cursor:pointer;"/></td>
+  </tr>
+</table>
+</div>
+<div class="mod">
+<div class="title" style="position: relative;">
+
+<h2>JavaScript版赛车游戏源码</h2>
+
+</div>
+<div class="msg">
+<ul class="msg1">
+<li><span>资源大小：</span>114 K</li>
+<li><span>资源属性：</span><a href="http://down.51cto.com/detail?c_re=4"  target="_blank"><u>源代码</u></a></li>
+<li><span>企业分类：</span><a href="http://down.51cto.com/detail?c_co=24"  target="_blank"><u>其它</u></a></li>
+</ul>
+<ul class="msg2">
+<li><dl>
+<dt><img src="http://down.51cto.com/images/dou.gif" title="下载豆是下载中心的虚拟货币，用于下载资源" /></dt>
+<dd>2</dd></dl></li>
+<li><span>技术分类：</span><a href="http://down.51cto.com/detail?c_it=44"  target="_blank"><u>开发技术</u></a> > <a href="http://down.51cto.com/detail?c_it=4405" target="_blank"><u>Web开发</u> </a></li>
+<li><span>行业分类：</span><a href="http://down.51cto.com/detail?c_in=26" target="_blank"><u>互联网/IT</u></a></li>
+</ul>
+<ul class="msg3">
+
+<li><a href="#"><img src="http://down.51cto.com/images/down.gif" alt="下载" border="0" onclick="download_check(3268796,2,182087)"/></a></li>
+<li><a href="http://down.51cto.com/download.php?do=comment&tid=182087" onclick="javascript:if(!3268796){dw_loginform('请先登录');return false;}">[评价]</a> <a href="javascript:void(0)" onclick="report_this(3268796,182087)">[举报]</a></li>
+
+
+</ul>
+</div>
+<div class="summary1">
+<ul class="sum1"><li><img src="http://ucenter.51cto.com/avatar.php?uid=2129530&size=small" alt="头像" /></li>
+</ul>
+<ul class="sum2"><li><a href="http://down.51cto.com/2129530">火柴女孩</a>  上传</li>
+<li>2011-03-30 12:22</li>
+<input name="questionflag" id="questionflag" value="3268796" type="hidden" />
+<li onclick="question();"><a href=" javascript:void(0);">向上传者提问</a></li>
+</ul>
+<ul class="sum3"><li style="margin-bottom:18px;">已有<span>137</span>位 Down友下载，其中<span>13</span>位发表了评价 <a href="#02">[查看详情]</a></li>
+<li>
+<dl><dt><img src="http://down.51cto.com/images/ico7_5.gif" alt="下载豆"/></dt><dd>力荐:4</dd></dl>
+<dl><dt><img src="http://down.51cto.com/images/ico7_2.gif" alt="下载豆"/></dt><dd>好评:9</dd></dl>
+<dl><dt><img src="http://down.51cto.com/images/ico7_3.gif" alt="下载豆"/></dt><dd>中评:0</dd></dl>
+<dl><dt><img src="http://down.51cto.com/images/ico7_4.gif" alt="下载豆"/></dt><dd>差评:0</dd></dl>
+</li></ul>
+</ul>
+</div>
+<div class="guide">
+<ul>
+<li class="gui1">简介：</li>
+<li class="gui2">JavaScript版赛车游戏源码.rar</li>
+</ul>
+<ul>
+<li class="gui1">标签：</li>
+<li class="gui2">
+
+<a href="http://down.51cto.com/tag-JavaScript.html" target="_blank">JavaScript</a>
+
+<a href="http://down.51cto.com/tag-%E8%B5%9B%E8%BD%A6.html" target="_blank">赛车</a>
+
+<a href="http://down.51cto.com/tag-%E6%B8%B8%E6%88%8F.html" target="_blank">游戏</a>
+
+<a href="http://down.51cto.com/tag-%E6%BA%90%E7%A0%81.html" target="_blank">源码</a>
+
+<a href="http://down.51cto.com/tag-JavaScript%E6%B8%B8%E6%88%8F.html" target="_blank">JavaScript游戏</a>
+
+</li>
+</ul><br class="dle"/>
+</div>
+</div>
+<div class="Related">
+<div class="title"><h3>相关下载资源</h3></div>
+<div class="list">
+
+<div style="padding:0 0 0 8px">
+<b>*本资源被收录至下载专题：</b>
+<a href="http://down.51cto.com/zt/115" style="color:#0B70B5;text-decoration:underline" target="_blank">13个经典JavaScript游戏源码</a>&nbsp;
+
+</div>
+
+<ul>
+
+<li><a href="http://down.51cto.com/data/182079">Blog博客管理系统源码</a></li>
+
+<li><a href="http://down.51cto.com/data/182083">javascript 坦克大战游戏源码</a></li>
+
+<li><a href="http://down.51cto.com/data/182085">JavaScript版打飞机游戏源码</a></li>
+
+<li><a href="http://down.51cto.com/data/182086">Javascript版飞行射击游戏</a></li>
+
+<li><a href="http://down.51cto.com/data/182088">javascript编写五子棋源码</a></li>
+
+<li><a href="http://down.51cto.com/data/182089">javascript打兔子源码</a></li>
+
+<li><a href="http://down.51cto.com/data/182090">JavaScript泡泡游戏源码</a></li>
+
+<li><a href="http://down.51cto.com/data/182091">javascript游戏24点源码</a></li>
+
+</ul><br class="dle"/>
+</div>
+</div>
+<div class="Tips">发表10条以上优质评论，可申请成为评论达人，达人发表评论获2颗下载豆。<a href="/dr" target="_blank">申请评论达人</a><a href="http://51ctodown.blog.51cto.com/948211/204397">如何赚下载豆？</a></div><a name="02"></a>
+<div class="review" id="resources_comment">
+<div class="title"><h3>Down友的评价</h3>
+<dl><dd><select name="select" onchange="getcomment(182087,this.value,1,137)">
+  <option value="0">全部评价</option>
+   <option value="5">只看达人</option>
+  <option value="1">力荐</option>
+  <option value="2">好评</option>
+  <option value="3">中评</option>
+  <option value="4">差评</option>
+  </select></dd><dt><a href="javascript:void(0)" onclick="down_record(182087)">下载记录（137人）</a></dt>
+</dl>
+</div>
+<div class="list">
+<ul>
+
+<li class=""><dl>
+  <dt><a href="http://down.51cto.com/2695562">andyqxp</a>
+  
+  好评</dt>
+
+<dd><a href="javascript:commentassess(182087,2404922,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2404922">支持(0)</a><a href="javascript:commentassess(182087,2404922,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2404922">反对(0)</a>2011-06-26 08:33:17</dd>
+
+</dl>
+<p>好东西，研究研究<br/></p></li>
+
+<li class="li1"><dl>
+  <dt><a href="http://down.51cto.com/483340">wonyun</a>
+  
+  好评</dt>
+
+<dd><a href="javascript:commentassess(182087,2404538,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2404538">支持(0)</a><a href="javascript:commentassess(182087,2404538,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2404538">反对(0)</a>2011-06-25 20:55:19</dd>
+
+</dl>
+<p>谢谢分享啊<br/></p></li>
+
+<li class=""><dl>
+  <dt><a href="http://down.51cto.com/1273246">keyzf</a>
+  
+  力荐</dt>
+
+<dd><a href="javascript:commentassess(182087,2404426,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2404426">支持(0)</a><a href="javascript:commentassess(182087,2404426,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2404426">反对(0)</a>2011-06-25 19:06:04</dd>
+
+</dl>
+<p>发现好的东西越来越多了，狂顶！！！！</p></li>
+
+<li class="li1"><dl>
+  <dt><a href="http://down.51cto.com/1290501">sandy1890</a>
+  
+  好评</dt>
+
+<dd><a href="javascript:commentassess(182087,2404311,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2404311">支持(0)</a><a href="javascript:commentassess(182087,2404311,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2404311">反对(0)</a>2011-06-25 17:38:54</dd>
+
+</dl>
+<p>今天通过专题过来，下载这几个游戏都很给力呀。</p></li>
+
+<li class=""><dl>
+  <dt><a href="http://down.51cto.com/2509814">chemdemo</a>
+  
+  好评</dt>
+
+<dd><a href="javascript:commentassess(182087,2403744,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2403744">支持(1)</a><a href="javascript:commentassess(182087,2403744,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2403744">反对(0)</a>2011-06-25 11:52:10</dd>
+
+</dl>
+<p>很好，能用js写游戏的都是牛人，希望自己能尽快写出一款小游戏。。。。</p></li>
+
+<li class="li1"><dl>
+  <dt><a href="http://down.51cto.com/1460778">906863444</a>
+  
+  好评</dt>
+
+<dd><a href="javascript:commentassess(182087,2368647,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2368647">支持(1)</a><a href="javascript:commentassess(182087,2368647,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2368647">反对(0)</a>2011-06-09 09:40:45</dd>
+
+</dl>
+<p>学习了 借鉴一下,,,</p></li>
+
+<li class=""><dl>
+  <dt><a href="http://down.51cto.com/2879422">xyq133</a>
+  
+  好评</dt>
+
+<dd><a href="javascript:commentassess(182087,2308040,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2308040">支持(1)</a><a href="javascript:commentassess(182087,2308040,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2308040">反对(0)</a>2011-05-12 17:22:12</dd>
+
+</dl>
+<p>游戏不错，谢谢分享</p></li>
+
+<li class="li1"><dl>
+  <dt><a href="http://down.51cto.com/1952776">zhanman000</a>
+  
+  力荐</dt>
+
+<dd><a href="javascript:commentassess(182087,2300056,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2300056">支持(1)</a><a href="javascript:commentassess(182087,2300056,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2300056">反对(0)</a>2011-05-09 14:18:24</dd>
+
+</dl>
+<p>很好， 希望我也能早点写出来游戏！！！</p></li>
+
+<li class=""><dl>
+  <dt><a href="http://down.51cto.com/3051380">springzlxie</a>
+  
+  好评</dt>
+
+<dd><a href="javascript:commentassess(182087,2289435,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2289435">支持(1)</a><a href="javascript:commentassess(182087,2289435,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2289435">反对(0)</a>2011-05-04 20:19:37</dd>
+
+</dl>
+<p>挺不错的，但是不支持火狐</p></li>
+
+<li class="li1"><dl>
+  <dt><a href="http://down.51cto.com/2838970">jhonnyby</a>
+  
+  力荐</dt>
+
+<dd><a href="javascript:commentassess(182087,2267498,0,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="support_2267498">支持(2)</a><a href="javascript:commentassess(182087,2267498,1,'http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087')" class="fb" id="oppose_2267498">反对(0)</a>2011-04-24 21:44:54</dd>
+
+</dl>
+<p>在学web开发，借鉴借鉴</p></li>
+
+</ul>
+</div>
+<div class="Pagination"><a href='' onclick='getcomment(182087,0,1,137);return false'>&nbsp;<<&nbsp;</a>&nbsp;&nbsp;<b>1</b>&nbsp; <a href='' onclick='getcomment(182087,0,2,137);return false'>&nbsp;2&nbsp;</a> <input type='text' size='2' style='height: 16px; border:1px solid #E5E5E5;' onkeydown="javascript: if(event.keyCode==13) getcomment(182087,0,this.value,137);"> <a href='' onclick='getcomment(182087,0,2,137);return false'>&nbsp;>>&nbsp;</a>&nbsp;&nbsp;页数 ( 1/2 )</div>
+</div>
+</div>
+
+<div id="right">
+<div class="search">
+<form action="http://down.51cto.com/detail_list.php" method="get">
+<dl><dt><input type="hidden" id="" name="uid" /><input type="text" name="keywords" class="text1" /></dt><dd><input type="image" src="http://down.51cto.com/images/search.gif" alt="搜索" /></dd>
+</dl></form></div>
+
+<div class="ag"><a target="_blank" href="http://down.51cto.com/zt/177">
+					  <img alt="几款jQuery实现超炫效果的实例源码" src="http://down.51cto.com/data/specialimg/1306808678_special.jpg"/>
+					  </a></div>
+
+<div class="Comments">
+<div class="title">
+  <h4>达人评论</h4>
+  <span><a href="#02">更多>></a></span></div>
+<div class="list">
+<ul>
+
+</ul>
+</div>
+</div>
+
+<div class="ag"><a target="_blank" href="http://down.51cto.com/zt/153">
+					  <img alt="JQuery API开发环境配置手册大全" src="http://down.51cto.com/data/specialimg/1305277252_special.jpg"/>
+					  </a></div>
+
+<div class="paihang">
+<div class="title"><h4>推荐下载资源</h4>
+<span><a href="http://down.51cto.com/commend">更多>></a></span></div>
+<div class="list"><ul>
+
+<li><a href="http://down.51cto.com/data/217054" title="五个javascript倒计时实例源码">五个javascript倒计时实例..</a></li>
+
+<li><a href="http://down.51cto.com/data/181926" title="ActionScript 3.0 实现的聊天室系统源码">ActionScript 3.0 实现的聊..</a></li>
+
+<li><a href="http://down.51cto.com/data/214175" title="Google 舞者Logo的JS脚本源码">Google 舞者Logo的JS脚本源..</a></li>
+
+<li><a href="http://down.51cto.com/data/212557" title="Google首页电吉他Doodle源代码">Google首页电吉他Doodle源..</a></li>
+
+<li><a href="http://down.51cto.com/data/210007" title="jsp的学生在线选课系统源码（附数据库备份）">jsp的学生在线选课系统源码..</a></li>
+
+<li><a href="http://down.51cto.com/data/206680" title="Google Hacks 探索和利用全球信息资源的技巧和工具">Google Hacks 探索和利用全..</a></li>
+
+<li><a href="http://down.51cto.com/data/59324" title="轻轻松松学用JavaScript编程(经典教程)">轻轻松松学用JavaScript编..</a></li>
+
+<li><a href="http://down.51cto.com/data/186142" title="《网页设计与制作教程（第2版）》胡耀芳（扫描版）">《网页设计与制作教程（第2版..</a></li>
+
+<li><a href="http://down.51cto.com/data/190904" title="Google SEO入门图文教程（2010年）">Google SEO入门图文教程（201..</a></li>
+
+<li><a href="http://down.51cto.com/data/188824" title="网站Flash导航菜单（共116个）">网站Flash导航菜单（共116个）..</a></li>
+
+</ul>
+</div>
+</div>
+
+<div class="ag"><a target="_blank" href="http://down.51cto.com/zt/115">
+					  <img alt="13个经典JavaScript游戏源码" src="http://down.51cto.com/data/specialimg/1302007696_special.jpg"/>
+					  </a></div>
+
+<div class="paihang">
+<div class="title"><h4>本周下载热点</h4></div>
+<div class="list"><ul>
+
+<li><a href="http://down.51cto.com/data/217399" title="大学生攻克Linux系统教程(S1.0)">大学生攻克Linux系统教程(S..</a></li>
+
+<li><a href="http://down.51cto.com/data/216885" title="高级框架设计师培训讲义（PPT）">高级框架设计师培训讲义（PPT..</a></li>
+
+<li><a href="http://down.51cto.com/data/218671" title="单机版的三国杀 Excel">单机版的三国杀 Excel..</a></li>
+
+<li><a href="http://down.51cto.com/data/216727" title="《Windows运维月刊》第一期：Exchange环境与安全">《Windows运维月刊》第一期..</a></li>
+
+<li><a href="http://down.51cto.com/data/216654" title="《中文版Excel2007公式与函数应用宝典》完整电子书">《中文版Excel2007公式与函..</a></li>
+
+<li><a href="http://down.51cto.com/data/217197" title="Oracle语句的优化的53个规则详解">Oracle语句的优化的53个规..</a></li>
+
+<li><a href="http://down.51cto.com/data/217112" title="BGP边界网关协议配置与排错中文讲义（PPT）">BGP边界网关协议配置与排错..</a></li>
+
+<li><a href="http://down.51cto.com/data/217578" title="IBM AIX系统学习必备文档大全指南">IBM AIX系统学习必备文档大..</a></li>
+
+<li><a href="http://down.51cto.com/data/217398" title="华为内部培训资料——数据通信技术">华为内部培训资料——数据..</a></li>
+
+<li><a href="http://down.51cto.com/data/217678" title="visio图库（hp,ibm,cisco等visio图）">visio图库（hp,ibm,cisco等vi..</a></li>
+
+</ul></div>
+</div>
+
+</div><br class="dle"/>
+<div style="display:none"><img src="http://down.51cto.com/images/guanbi.gif"><img src="http://down.51cto.com/images/ico4_4.gif"><img src="http://down.51cto.com/images/bq_bg2.gif"></div>
+
+</div>
+<div id="pop3" style="display:none;height: 2000px;" class="blackMask"/></div>
+<div id="pop2" style="display:none">
+</div>
+<div id="pop" style="display:none">
+</div>
+<style>
+.hidden{ display:none}
+
+
+#smallLay{background-color:#FFFFFF;-webkit-box-shadow:5px 2px 6px #000;-moz-box-shadow:3px 3px 6px #555;}
+
+</style>
+<script type="text/javascript">
+function closedsend(){
+  window.location.href="http://down.51cto.com/data/182087";
+  return true;
+}
+function checksend(){
+  var title = document.getElementById("title").value;
+  var des = document.getElementById("descriptions").value;
+  var uid = document.getElementById("questionflag").value;
+  var up = document.getElementById("upuser").value;
+  var tid = 182087;
+  var thread = "JavaScript版赛车游戏源码";
+  
+  if(title==""){
+    alert("请输入标题");
+    return false;
+  }
+  if(title.length>20){
+     alert("标题不能超过20个字");
+	 return false;
+  }
+  if(des==""){
+    alert("请输入问题描述");
+	return false;
+  }
+		url="http://down.51cto.com/download.php?do=qsend&uid="+uid+"&title="+title+"&des="+des+"&up="+up+"&tid="+tid+"&thread="+thread;
+		ajax = new InitAjax();
+		ajax.open("POST",url,true);
+		ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+		ajax.send(url);
+		ajax.onreadystatechange = function() { 
+		 if (ajax.readyState == 4 && ajax.status == 200) { 
+		    result=ajax.responseText;
+			//alert(result);
+			if(result==1){
+			 document.getElementById('checksend').style.display='none';
+			 document.getElementById('send').style.display='block';
+			 document.getElementById('send2').style.display='none';
+			 return true;
+			}else if(result==2){
+			 alert("请不要给自己提问");
+			 return false;
+			}else{
+			alert("服务器忙，请稍候再试。");
+			return false;
+			}
+	    } 
+		}
+
+}
+
+function question(){
+  var uid = document.getElementById("questionflag").value;
+
+    if(uid==0){
+     showid("smallLay");
+	 document.getElementById('checksend').style.display='none';
+	 document.getElementById('send').style.display='none';
+	 document.getElementById('send2').style.display='none';
+	 document.getElementById('unlogined').style.display='block';
+	 return false;
+ } 
+   showid("smallLay");
+}
+
+ function showid(idname){
+var isIE = (document.all) ? true : false;
+var isIE6 = isIE && ([/MSIE (\d)\.0/i.exec(navigator.userAgent)][0][1] == 6);
+var newbox=document.getElementById(idname);
+newbox.style.zIndex="9999";
+newbox.style.display="block"
+newbox.style.position = !isIE6 ? "fixed" : "absolute";
+newbox.style.top =newbox.style.left = "50%";
+newbox.style.marginTop = - newbox.offsetHeight / 2 + "px";
+newbox.style.marginLeft = - newbox.offsetWidth / 2 + "px";  
+var layer=document.createElement("div");
+layer.id="layer";
+layer.style.width=layer.style.height="100%";
+layer.style.position= !isIE6 ? "fixed" : "absolute";
+layer.style.top=layer.style.left=0;
+layer.style.backgroundColor="";//#ffffff
+layer.style.zIndex="9998";
+layer.style.opacity="0.6";
+document.body.appendChild(layer);
+var sel=document.getElementsByTagName("select");
+for(var i=0;i<sel.length;i++){       
+sel[i].style.visibility="hidden";
+}
+function layer_iestyle(){      
+layer.style.width=Math.max(document.documentElement.scrollWidth, document.documentElement.clientWidth)
++ "px";
+layer.style.height= Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight) +
+"px";
+}
+function newbox_iestyle(){      
+newbox.style.marginTop = document.documentElement.scrollTop - newbox.offsetHeight / 2 + "px";
+newbox.style.marginLeft = document.documentElement.scrollLeft - newbox.offsetWidth / 2 + "px";
+}
+if(isIE){layer.style.filter ="alpha(opacity=60)";}
+if(isIE6){  
+layer_iestyle()
+newbox_iestyle();
+window.attachEvent("onscroll",function(){                              
+newbox_iestyle();
+})
+window.attachEvent("onresize",layer_iestyle)          
+}  
+/**
+layer.onclick=function(){newbox.style.display="none";layer.style.display="none";for(var i=0;i<sel.length;i++){
+sel[i].style.visibility="visible";
+}}
+**/
+
+}
+ function InitAjax(){
+	var ajax=false; 
+	if(window.XMLHttpRequest){ 
+			var ajax = new XMLHttpRequest();
+		}
+		else if(window.ActiveXObject){ 
+			var ajax = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+	return ajax;
+   }
+</script>
+
+<style>
+/**body{font-family:宋体;margin:0 auto;padding:0;font-size:12px;color:#000; background:url() repeat-x;background-color: #FFFFFF; }
+body > div{margin-right:auto;margin-left:auto; } **/
+div,form,dl,dt,dd,ul,ol,li,span,p{margin:0;padding:0;border:0;}
+img,a img{border:0;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-weight:normal;}
+ul,ol,li{list-style:none; margin:0; padding:0; border:0;}
+table,td,input{font-size:12px}
+
+h1 { display:none;}
+h2 { font-size:12px;}
+h5 { font-size:16px; color:#FBFBFB; font-weight:bold;}
+#ad_022 {padding-top:4px;}
+
+/* 默认链接颜色 */
+a{ outline-style:none; color:#555555; text-decoration:none}
+a:hover{ color:#CC0000; text-decoration:underline;}
+
+.shoucang {	width:390px;margin:auto; border:1px double #B0B0B0;}
+.shoucang .nav {width:100%; height:25px; font-size:14px; text-indent:20px; font-weight:bold; padding-top:10px; background:url(http://home.51cto.com/public/themes/blue/images/top_bg.gif) repeat-x;background-color: #DAEBFD; color:#0066CC;}
+
+.shoucang .esgr {float: right;width:370px; padding:10px;}
+
+.dle { clear:both;}
+</style>
+
+<div class="shoucang" id="smallLay" style="display:none">
+<div class="nav">向上传者提问 <img onclick="closedsend();" src="http://home.51cto.com/apps/favorite/Tpl/default/Public/images/close.gif" border="0" title="Close" style="position: absolute; right: 10px; top: 15px;" /></div>
+<div class="esgr">
+
+<div style="font-size: 12px;color: rgb(102, 102, 102);height:20px;padding-top:6px;padding-left:10px; margin-bottom:8px; text-align:center;" id="send2">
+如果不明白资源的使用，直接向上传者提问
+</div>
+
+<div id="jiaru" style="margin-bottom:10px;">
+<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" id="checksend">
+<tr>
+<td width="80" height="30" align="right" style="color:#333333; font-size:12px; line-height:18px;">上传者：</td>
+<td style=" color:#000000;">火柴女孩</td>
+<input name="upuser" id="upuser" value="2129530" type="hidden" />
+</tr>
+
+<tr>
+<td height="30" align="right" style="color:#333333; font-size:12px; line-height:18px;">标题：</td>
+<td><input type="text" name="title" id="title" style=" height:16px; width:220px;border:1px double #BDC7D8; padding-top:4px; padding-left:4px;" /></td>
+</tr>
+
+<tr>
+<td align="right" valign="top" style="color:#333333; font-size:12px; line-height:18px;">问题描述：</td>
+<td>
+<label>
+<textarea name="textarea" name="description" id="descriptions" style="color:#666666; font-size:12px; width:220px; height:80px; border:1px double #BDC7D8; padding-top:4px; padding-left:4px;"></textarea>
+</label><br /></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td style=" height:40px; padding-left:70px;"><input onclick="checksend();" type="submit" value="确定发送" style="width:80px; height:26px; color:#FFFFFF; border:1px double #3385CA;  background-image:url(http://home.51cto.com/public/themes/blue/images/btn_b.gif)" /></td>
+</tr>
+
+<tr>
+<td height="50" colspan="2" align="left"><span style="color:#FF0000;">*找不到想要的资源？</span> <a href="http://zhidao.51cto.com/qlist/9218#" target="_blank" style="font-size:12px; color:#0066CC;">去技术知道发布求助>></a></td>
+
+</tr>
+
+</table>
+
+<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:20px; display:none;" id="send">
+<tr>
+<td width="120" height="30" align="right"><img src="http://home.51cto.com/thinksns/Tpl/default/Public/images/fzcg_dh[1].gif" style="margin-right:10px;" /></td>
+<td style="font-size:14px; color:#333333; font-weight:bold;">发送成功！</td>
+</tr>
+<tr>
+<td height="30">&nbsp;</td>
+<td style="font-size:14px; color:#333333; font-weight:bold;">请关注您的短消息。</td>
+</tr>
+<tr>
+<td height="50">&nbsp;</td>
+<td style="padding-left:6px;"><input onclick="closedsend();" type="submit" value="关闭" style="width:80px; height:26px; color:#FFFFFF; border:1px double #3385CA;  background-image:url(http://home.51cto.com/public/themes/blue/images/btn_b.gif)" /></td>
+</tr>
+</table>
+<div id="unlogined" style="display:none;">	请先<a href="http://home.51cto.com?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087" style="color: rgb(0, 102, 204);">登录</a> 或 <a href="http://ucenter.51cto.com/ucenter/reg_01.php?reback=http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087" style="color: rgb(0, 102, 204);">注册</a>
+<br />登录成功后将自动返回本页,再提问。
+<p onclick="closedsend();"> <a href=" javascript:void(0);">关闭</a></p>
+</div>
+ </div>
+</div>
+<div class="dle"></div>
+</div>
+
+
+<div class="foot">Copyright By <a href="http://www.51cto.com" target="_blank">51CTO.COM</a> 版权所有</div>
+<script src="http://home.51cto.com/index.php?s=/Index/getLoginStatus/reback/http%253A%252F%252Fdown.51cto.com%252Fdata%252F182087"></script>
+
+<script src="http://down.51cto.com/js/Down_PNG.js"></script>
+
+<script src="http://logs.51cto.com/rizhi/count/count.js"></script>
+<script type="text/javascript"> 
+var userAgent = navigator.userAgent.toLowerCase();
+var is_opera = userAgent.indexOf('opera') != -1 && opera.version();
+var is_ie = (userAgent.indexOf('msie') != -1 && !is_opera) && userAgent.substr(userAgent.indexOf('msie') + 5, 3);
+if (is_ie)
+{
+	var location=document.location 
+}
+</script>
+<iframe frameborder="0" scrolling="no" width="0" height="0" src="http://log.51cto.com/pageview.php?frompos=blog_art"></iframe>
+</body>
+</html>
